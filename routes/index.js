@@ -7,5 +7,8 @@ const authController = require('../controllers/authController');
 
 // router.post('/signin', authController.signIn);
 router.post('/login', authController.login);
+router.get('/', (req, res) => {
+  res.send('hellaw')
+})
 
 module.exports = router;
